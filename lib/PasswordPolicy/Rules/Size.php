@@ -10,7 +10,7 @@ class Size extends Base {
     }
 
     public function test($password) {
-        return $this->testConstraint(strlen($password), $password);
+        return $this->testConstraint(mb_strlen($password), $password);
     }
 
     public function toJavaScript() {
